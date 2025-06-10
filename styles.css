@@ -1,0 +1,154 @@
+/* Reset de base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+}
+
+body {
+  background: url('https://www.transparenttextures.com/patterns/old-moon.png');
+  background-color: #fdf5e6;
+  color: #3b2f2f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Import Google Fonts pour un effet médiéval */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap');
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #5c3d1e;
+  text-shadow: 2px 2px 0 #e2c799;
+}
+
+/* Carte en style parchemin */
+#app {
+  width: 100%;
+  max-width: 600px;
+  background: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  background-color: #fff8dc;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 40px rgba(80, 50, 20, 0.4);
+  border: 2px solid #a67c52;
+  position: relative;
+}
+
+/* Coins décoratifs */
+#app::before,
+#app::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url('https://www.svgrepo.com/show/16083/ornament.svg') no-repeat center;
+  background-size: contain;
+}
+#app::before {
+  top: -16px;
+  left: -16px;
+}
+#app::after {
+  bottom: -16px;
+  right: -16px;
+}
+
+/* Champ de recherche */
+#search-wrap {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#search-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 2px solid #a67c52;
+  border-radius: 8px;
+  background-color: #fffaf0;
+  font-size: 1rem;
+}
+
+#search-button {
+  padding: 0.5rem 1rem;
+  background-color: #a67c52;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #865c3c;
+}
+
+/* Contenu de la créature */
+.hidden {
+  display: none;
+}
+
+#creature-wrap {
+  margin-top: 1rem;
+}
+
+.stat-line {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.stat.type {
+  font-weight: bold;
+  color: #7b4f1d;
+  min-width: 140px;
+}
+
+.stat.content {
+  color: #2d2d2d;
+}
+
+/* Types de créature */
+#types span {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  margin-right: 0.3rem;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Couleurs par type */
+.fire { background-color: #cc4a2f; }
+.water { background-color: #3670d4; }
+.grass { background-color: #4aa35a; }
+.electric { background-color: #d4b03a; color: #000; }
+.ice { background-color: #7ecbdc; color: #000; }
+.fighting { background-color: #80332d; }
+.poison { background-color: #7b4b94; }
+.ground { background-color: #caa95a; color: #000; }
+.flying { background-color: #a28dd8; }
+.psychic { background-color: #c45a7b; }
+.bug { background-color: #b2c534; color: #000; }
+.rock { background-color: #b09c6b; color: #000; }
+.ghost { background-color: #5a4b81; }
+.dragon { background-color: #5d3fc0; }
+.dark { background-color: #443838; }
+.steel { background-color: #b9b9d0; color: #000; }
+.fairy { background-color: #e8a3c3; color: #000; }
+.normal { background-color: #b7b7a5; color: #000; }
