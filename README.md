@@ -1,6 +1,6 @@
 #  ( 🌐 version ) 
 
-🔗 **Live Website**: [fcc-RPG_Creature_Search/](https://idghim.github.io/fcc-RPG_Creature_Search/)
+🔗 **Live Website**: [RPG Creature Search](https://idghim.github.io/fcc-RPG_Creature_Search/)
 
 > ✨ *In this project, I made some custom modifications to the original instructions to achieve a design that reflects my personal style and preferences.*
 
